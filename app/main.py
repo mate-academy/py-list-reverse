@@ -1,3 +1,2 @@
-# TODO: add initial code
-def hello_world():
-    return "Hello, world!"
+def list_reverse(words: list):
+    return [word[::-1] for word in words[::-1]]
