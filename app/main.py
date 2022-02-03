@@ -1,2 +1,8 @@
 def list_reverse(words: list):
-    return [word[::-1] for word in words[::-1]]
+    chained_reversed = ''.join(words)[::-1]
+    list_reversed = []
+    it = 0
+    for word in words:
+        list_reversed.append(chained_reversed[it: it + len(word)])
+        it += len(word)
+    return list_reversed
