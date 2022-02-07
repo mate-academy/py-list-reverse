@@ -6,3 +6,4 @@ def list_reverse(words: list):
         list_reversed.append(chained_reversed[it: it + len(word)])
         it += len(word)
     return list_reversed
+print(list_reverse(['&89fg','@@@@', 'school']))
