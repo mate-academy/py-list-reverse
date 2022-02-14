@@ -7,9 +7,8 @@ def test_final_result():
 
 def test_is_element_length_correct():
     origin_list = ['I', 'am', 'a', 'student!']
-    reversed_list = list_reverse(['I', 'am', 'a', 'student!'])
 
-    for i, j in zip(origin_list, reversed_list):
+    for i, j in zip(origin_list, list_reverse(['I', 'am', 'a', 'student!'])):
         assert len(i) == len(j)
 
 
