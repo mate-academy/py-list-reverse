@@ -14,6 +14,5 @@ def test_is_element_length_correct():
 
 def test_is_sliced_content_reversed():
     origin_list = ['Python', 'Django', 'Flask', 'SQL', 'NoSQL']
-    reversed_list = list_reverse(origin_list)
 
-    assert "".join(origin_list) == "".join(reversed_list)[::-1]
+    assert "".join(origin_list) == "".join(list_reverse(origin_list))[::-1]
