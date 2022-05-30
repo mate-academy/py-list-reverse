@@ -23,3 +23,5 @@ def test_should_return_reverse_and_length_of_strings_from_original_is_not_change
     assert len(list_reverse(['Mate', 'Academy'])[1]) == len(['ymed', 'acAetaM'][1])
 
 
+def test_should_return_empty_list_when_input_empty():
+    assert list_reverse([]) == []
