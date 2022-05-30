@@ -25,3 +25,7 @@ def test_should_return_reverse_and_length_of_strings_from_original_is_not_change
 
 def test_should_return_empty_list_when_input_empty():
     assert list_reverse([]) == []
+
+
+def test_should_return_list_with_empty_string_when_input_empty_string():
+    assert list_reverse([""]) == [""]
